@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pakistan Studies Interactive MCQ Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Interactive MCQ Quiz</p>
+        <h1>Pakistan Studies Lectures Quiz</h1>
+        <p class="subtitle">Click an option, get instant feedback, track your score, and view final results.</p>
+      </div>
+      <div class="score-card">
+        <span>Score</span>
+        <strong id="liveScore">0 / 0</strong>
+      </div>
+    </header>
+
+    <main class="quiz-card">
+      <section class="top-row">
+        <div>
+          <p id="lectureTag" class="tag">Lecture</p>
+          <h2 id="questionText">Question text</h2>
+        </div>
+        <div class="counter"><span id="currentNo">1</span>/<span id="totalNo">0</span></div>
+      </section>
+
+      <div class="progress-wrap"><div id="progressBar" class="progress"></div></div>
+      <div id="options" class="options"></div>
+      <p id="feedback" class="feedback"></p>
+
+      <div class="actions">
+        <button id="prevBtn" class="btn secondary">Previous</button>
+        <button id="nextBtn" class="btn primary">Next</button>
+      </div>
+    </main>
+
+    <section class="jump-card">
+      <h3>Question Navigation</h3>
+      <div id="questionNav" class="question-nav"></div>
+    </section>
+  </div>
+
+  <div id="resultModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Final Result 🎉</h2>
+      <div class="result-grid">
+        <div><span>Total Questions</span><strong id="resultTotal">0</strong></div>
+        <div><span>Score</span><strong id="resultScore">0</strong></div>
+        <div><span>Percentage</span><strong id="resultPercent">0%</strong></div>
+        <div><span>Correct</span><strong id="resultCorrect">0</strong></div>
+        <div><span>Incorrect</span><strong id="resultIncorrect">0</strong></div>
+      </div>
+      <button id="restartBtn" class="btn primary full">Restart Quiz</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
